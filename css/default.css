@@ -11,6 +11,10 @@
     color: #fff ;
     overflow: hidden;
 }
+
+:root{
+    --logo: #FF5600;
+}
 main{
     background: url(../assets/bg-home.png) no-repeat center ;
     background-size: cover;
@@ -35,6 +39,35 @@ main{
     width: 300px;
     filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.6));
     margin-left: -4rem;
+}
+
+#icon path{
+    fill: var(--logo);
+    stroke: 30;
+    stroke-width: 2px;
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 0;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: contorno 3s  linear;
+}
+
+@keyframes contorno {
+    0%{
+        stroke-dashoffset: 1100;
+        stroke: #fff;
+        fill: transparent;
+    }
+
+    50%{
+        stroke-dashoffset: 1100;
+        stroke: #fff;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke: #fff;
+        fill: transparent;
+    }
 }
 
 #icon span{
