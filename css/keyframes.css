@@ -1,0 +1,38 @@
+#icon path{
+    animation: outline 2s  linear;
+}
+
+@keyframes outline {
+    0%{
+        stroke-dashoffset: 1100;
+        stroke: #fff;
+        fill: transparent;
+    }
+
+    50%{
+        stroke-dashoffset: 1100;
+        stroke: #fff;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke: #fff;
+        fill: transparent;
+    }
+}
+
+#icon span{
+
+    animation: appear 3s 2s linear forwards;
+}
+
+#slogan{
+    animation: appear 3s 3s linear forwards;
+}
+
+@keyframes appear {
+    to{
+        opacity: 1;
+    }
+}
+
