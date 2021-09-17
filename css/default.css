@@ -48,7 +48,7 @@ main{
     stroke-dasharray: 1100;
     stroke-dashoffset: 0;
     animation: name duration timing-function delay iteration-count direction fill-mode;
-    animation: contorno 3s  linear;
+    animation: contorno 2s  linear;
 }
 
 @keyframes contorno {
@@ -70,11 +70,21 @@ main{
     }
 }
 
+@keyframes span {
+    to{
+        opacity: 1;
+    }
+}
+
 #icon span{
     font-size: 3rem;
     margin-left: -6rem;
+    opacity: 0;
+    animation: span 3s 2s linear forwards;
 }
 
 #slogan{
+    opacity: 0;
     place-self: center;
+    animation: span 3s 3s linear forwards;
 }
