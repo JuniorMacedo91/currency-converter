@@ -41,15 +41,6 @@ main{
     margin-left: -4rem;
 }
 
-#icon path{
-    fill: var(--logo);
-    stroke: 30;
-    stroke-dasharray: 1100;
-    stroke-dashoffset: 0;
-
-}
-
-
 #icon span{
     font-size: 3rem;
     margin-left: -6rem;

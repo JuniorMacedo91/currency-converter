@@ -1,5 +1,9 @@
 #icon path{
-    animation: outline 2s  linear;
+    fill: var(--logo);
+    stroke: 30;
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 0;
+    animation: outline 2s linear;
 }
 
 @keyframes outline {
@@ -22,7 +26,6 @@
 }
 
 #icon span{
-
     animation: appear 3s 2s linear forwards;
 }
 
@@ -35,4 +38,3 @@
         opacity: 1;
     }
 }
-
