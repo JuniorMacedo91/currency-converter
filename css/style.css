@@ -51,3 +51,18 @@ input{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(30px);
 }
+
+#from{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background: url('../assets/sort-down-solid.svg ') no-repeat;
+    background-position: top ;
+
+    width: 100px;
+    height: 40px;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--gray);
+}
