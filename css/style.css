@@ -1,0 +1,53 @@
+#icon svg{
+    width: 300px;
+    filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.6));
+    margin-left: -4rem;
+}
+
+#brand{
+    font:3.5rem 'Audiowide', sans-serif;
+    letter-spacing: 5px;
+    margin-left: -9rem;
+}
+
+#slogan{
+    letter-spacing: 5px;
+    place-self: center;
+}
+
+#title-wrapper{
+    display: grid;
+    justify-content: end;
+    align-content: flex-start;
+    text-align: right;
+}
+
+#title-one{
+    font-size: 1.2rem;
+}
+
+#title-two{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: var(--main-color);
+}
+
+#line{
+    width: 80vw;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(260deg, var(--main-color), white)1;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+
+    border:none;
+    border-radius: 10px ;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+}

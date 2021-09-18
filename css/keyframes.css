@@ -1,12 +1,12 @@
 #icon path{
-    fill: var(--logo);
+    fill: var(--main-color);
     stroke: 30;
     stroke-dasharray: 1100;
     stroke-dashoffset: 0;
     animation: outline 2s linear;
 }
 
-@keyframes outline {
+/* @keyframes outline {
     0%{
         stroke-dashoffset: 1100;
         stroke: #fff;
@@ -25,11 +25,13 @@
     }
 }
 
-#icon span{
+#brand{
+    opacity: 0;
     animation: appear 3s 2s linear forwards;
 }
 
 #slogan{
+    opacity: 0;
     animation: appear 3s 3s linear forwards;
 }
 
@@ -38,3 +40,14 @@
         opacity: 1;
     }
 }
+
+#home-container{
+    animation: disappear 2s linear 5s forwards;
+}
+
+@keyframes disappear {
+    to{
+       visibility: hidden;
+       opacity: 0;
+    }
+} */
