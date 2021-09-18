@@ -35,7 +35,7 @@ p{
     background: url(../assets/bg-home.png) no-repeat center ;
     background-size: cover;
 
-    display: none;
+    display: grid;
     z-index: 2;
 }
 
