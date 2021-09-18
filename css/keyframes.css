@@ -1,4 +1,4 @@
-#icon path{
+#icon-wrapper path{
     fill: var(--main-color);
     stroke: 30;
     stroke-dasharray: 1100;
@@ -6,7 +6,7 @@
     animation: outline 2s linear;
 }
 
- @keyframes outline {
+ /* @keyframes outline {
     0%{
         stroke-dashoffset: 1100;
         stroke: #fff;
@@ -48,10 +48,7 @@
     }
 } 
 
-#title-wrapper, #converter-container, #result-box{
-    visibility: hidden;
-}
-
+#title-wrapper, #converter-container, #result-box{ visibility: hidden;}
 #title-wrapper{animation: showContent 1s linear 7s forwards;}
 #converter-container{animation: showContent 1s linear 8s forwards;}
 #result-box{animation: showContent 1s linear 9s forwards;}
@@ -62,4 +59,4 @@
         visibility: visible;
         transform: translateY(0px);
     }
-}
+} */

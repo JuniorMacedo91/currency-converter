@@ -1,4 +1,4 @@
-#icon svg{
+#icon-wrapper svg{
     width: 300px;
     filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.6));
     margin-left: -4rem;
@@ -11,42 +11,23 @@
 }
 
 #slogan{
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+    max-width: 120px;
+    padding-bottom: 2rem;
     letter-spacing: 5px;
-    place-self: center;
 }
 
 #title-wrapper{
-    display: grid;
-    justify-content: end;
-    align-content: flex-start;
     text-align: right;
 }
 
-#title-one{
-    font-size: 1.2rem;
-}
-
-#title-two{
-    font-size: 2.5rem;
+#title-wrapper span{
+    display: grid;
+    color: var(--main-color);
     font-weight: bolder;
     letter-spacing: 3px;
-    color: var(--main-color);
-}
-
-#line{
-    width: 80vw;
-    border-bottom: 3px solid;
-    border-image: linear-gradient(260deg, var(--main-color), white)1;
-}
-
-input{
-    width: 100%;
-    padding: 10px;
-    font-size: 2.5rem;
-    text-align: center;
-
-    background-color:var(--glass);
-    backdrop-filter: blur(30px);
 }
 
 #converter-container{
@@ -65,21 +46,20 @@ select{
     -webkit-appearance: none;
 
     width: 120px;
-    height: 40px;
-    text-align: center;
+    padding: 5px;
     font-size: 1.5rem;
 
     background: url('../assets/arrow.svg ') no-repeat right;
     background-size: 1rem;
-    background-color: var(--gray);
+    background-color: gray;
 }
 
 #btn-converter{
     font-size: 1.2rem;
-    background-color: white;
-    color: var(--main-color);
-    letter-spacing: 3px;
     font-weight: bolder;
+    letter-spacing: 3px;
+    color: var(--main-color);
+    background-color: white;
     cursor: pointer;
 }
 
@@ -90,26 +70,12 @@ select{
 }
 
 #btn-converter:active{
-    transform: scale(.9);
+    transform: scale(.98);
     transition: .1s ease-in;
-}
-
-#result-box{
-    padding: 1rem;
-    background-color: var(--glass);
-    backdrop-filter: blur(30px);
-    text-align: center;
-    border: 2px solid var(--main-color);
-}
-
-#result-value{
-    font-size: 2.5rem;
-}
-
-#update-info{
-    font-size: 12px;
 }
 
 input, select, button, #result-box{
     border-radius: 10px;
+    text-align: center;
 }
+
