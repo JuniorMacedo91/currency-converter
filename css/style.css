@@ -25,13 +25,21 @@
 
 #title-wrapper span{
     display: grid;
-    color: var(--main-color);
     font-weight: bolder;
     letter-spacing: 3px;
 }
 
 #converter-container{
     display: grid;
+}
+
+#amount-input{
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 5px;
+    color: black;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 0px 5px 5px rgb(0, 0, 0);
 }
 
 #currency-option-box{
@@ -58,15 +66,14 @@ select{
     font-size: 1.2rem;
     font-weight: bolder;
     letter-spacing: 3px;
-    color: var(--main-color);
-    background-color: white;
-    cursor: pointer;
+    background-color: var(--light-green);
 }
 
 #btn-converter:hover{
     background-color: var(--main-color);
     color: white;
     transition: .2s ease-in;
+    cursor: pointer;
 }
 
 #btn-converter:active{

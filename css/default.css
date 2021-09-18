@@ -10,16 +10,21 @@
     font-family: 'Ubuntu', sans-serif;
     color: #fff ;
     border:none;
-    overflow: hidden;
 }
 
 :root{
     --main-color: #FF3D00;
-    --dark-gray: #181C1F;
+    --dark-gray: #1e2327;
+    --light-green: #546969;
 }
 
 span{
     font-size: 3rem;
+    color: var(--main-color);
+}
+
+p{
+    margin-bottom: 8px;
 }
 
 #home-container{
@@ -36,9 +41,8 @@ span{
 
 main{
     display: grid;
-    row-gap: 1rem;
+    padding:1.5rem;
     height: 100vh;
-    padding: 1rem;
     background-color: var(--dark-gray);
 }
 
