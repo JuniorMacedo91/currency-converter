@@ -45,24 +45,71 @@ input{
     font-size: 2.5rem;
     text-align: center;
 
-    border:none;
-    border-radius: 10px ;
-
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color:var(--glass);
     backdrop-filter: blur(30px);
 }
 
-#from{
+#converter-container{
+    display: grid;
+}
+
+#currency-option-box{
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+}
+
+select{
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
 
-    background: url('../assets/sort-down-solid.svg ') no-repeat;
-    background-position: top ;
-
-    width: 100px;
+    width: 120px;
     height: 40px;
-    border:none;
-    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+
+    background: url('../assets/arrow.svg ') no-repeat right;
+    background-size: 1rem;
     background-color: var(--gray);
+}
+
+#btn-converter{
+    font-size: 1.2rem;
+    background-color: white;
+    color: var(--main-color);
+    letter-spacing: 3px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn-converter:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: .2s ease-in;
+}
+
+#btn-converter:active{
+    transform: scale(.9);
+    transition: .1s ease-in;
+}
+
+#result-box{
+    padding: 1rem;
+    background-color: var(--glass);
+    backdrop-filter: blur(30px);
+    text-align: center;
+    border: 2px solid var(--main-color);
+}
+
+#result-value{
+    font-size: 2.5rem;
+}
+
+#update-info{
+    font-size: 12px;
+}
+
+input, select, button, #result-box{
+    border-radius: 10px;
 }

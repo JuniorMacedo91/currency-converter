@@ -6,7 +6,7 @@
     animation: outline 2s linear;
 }
 
-/* @keyframes outline {
+ @keyframes outline {
     0%{
         stroke-dashoffset: 1100;
         stroke: #fff;
@@ -36,18 +36,30 @@
 }
 
 @keyframes appear {
-    to{
-        opacity: 1;
-    }
+    to{opacity: 1;}
 }
 
-#home-container{
-    animation: disappear 2s linear 5s forwards;
-}
+#home-container{animation: disappear 2s linear 5s forwards;}
 
 @keyframes disappear {
     to{
        visibility: hidden;
        opacity: 0;
     }
-} */
+} 
+
+#title-wrapper, #converter-container, #result-box{
+    visibility: hidden;
+}
+
+#title-wrapper{animation: showContent 1s linear 7s forwards;}
+#converter-container{animation: showContent 1s linear 8s forwards;}
+#result-box{animation: showContent 1s linear 9s forwards;}
+
+@keyframes showContent {
+    0%{transform: translateY(-10px);}
+    100%{
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
