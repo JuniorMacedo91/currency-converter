@@ -36,26 +36,34 @@
                 <input type="number" name="" id="amount-input">
             </div>
             <div id="currency-option-box">
-                <label for="from">From</label>
-                <select name="from" id="from">
-                    <option value="BRL">BRL</option>
-                </select>
 
-                <label for="to">To</label>
-                <select name="to" id="to">
-                    <option value="BRL">USD</option>
-                </select>
+                <label for="from">
+                    <p>From</p>
+                    <select name="from" id="from">
+                        <option value="BRL">BRL</option>
+                    </select>
+                </label>
+
+                <label for="to">
+                    <p>To</p>
+                    <select name="to" id="to">
+                        <option value="BRL">USD</option>
+                    </select>
+                </label>
+                
             </div>
+            
+            <button id="btn-converter">Converter</button>
         </section>
 
         <section id="result-box">
-            <span>38,00</span>
+            <span id="result-value">38,00</span>
             <p>1 BRL = 0,190215 USD</p>
             <p>1 USD = 5,25721 BRL</p>
         </section>
 
-        <footer id="update-currency">
-            <p>Ultima atualização em 16/09 às 22:39</p>
+        <footer id="update-currency-wrapper">
+            <p id="update-info">Ultima atualização em 16/09 às 22:39</p>
         </footer>
     </main>
 </body>
