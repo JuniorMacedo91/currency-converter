@@ -1,7 +1,7 @@
 #icon-wrapper svg{
-    width: 300px;
+    width: 250px;
     filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.6));
-    margin-left: -4rem;
+    margin-left: -3rem;
 }
 
 #brand{
@@ -52,11 +52,11 @@ select{
     -moz-appearance: none;
     -webkit-appearance: none;
 
-    width: 8rem;
+    width: 7rem;
     padding: 5px;
     font-size: 1.5rem;
 
-    background: url('../assets/arrow.svg ') no-repeat right;
+    background: url('../assets/arrow.svg ') no-repeat 90px 0px  ;
     background-size: 1rem;
     background-color: rgb(108, 108, 108);
     box-shadow: var(--shadow);
@@ -83,11 +83,13 @@ select{
 }
 
 #result-box{
-    
+    padding: 10px;
+    background-color: rgb(36, 44, 52);
+    box-shadow: var(--shadow);
 }
 
-#update-info{
-    font-size: 10px;
+#update-info, #result-box p{
+    font-size: 12px;
     text-align: center;
 }
 

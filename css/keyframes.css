@@ -6,7 +6,7 @@
     animation: outline 2s linear;
 }
 
- /* @keyframes outline {
+  @keyframes outline {
     0%{
         stroke-dashoffset: 1100;
         stroke: #fff;
@@ -59,4 +59,4 @@
         visibility: visible;
         transform: translateY(0px);
     }
-} */
+}
