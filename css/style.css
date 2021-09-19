@@ -8,6 +8,7 @@
     font:3.5rem 'Audiowide', sans-serif;
     letter-spacing: 5px;
     margin-left: -9rem;
+    color: white;
 }
 
 #slogan{
@@ -20,6 +21,8 @@
 }
 
 #title-wrapper{
+    display: grid;
+    justify-content: flex-end;
     text-align: right;
 }
 
@@ -29,17 +32,13 @@
     letter-spacing: 3px;
 }
 
-#converter-container{
-    display: grid;
-}
-
 #amount-input{
     width: 100%;
     font-size: 2.5rem;
     padding: 5px;
     color: black;
     background-color: rgb(214, 214, 214);
-    box-shadow: 0px 5px 5px rgb(0, 0, 0);
+    box-shadow: var(--shadow);
 }
 
 #currency-option-box{
@@ -53,20 +52,22 @@ select{
     -moz-appearance: none;
     -webkit-appearance: none;
 
-    width: 120px;
+    width: 8rem;
     padding: 5px;
     font-size: 1.5rem;
 
     background: url('../assets/arrow.svg ') no-repeat right;
     background-size: 1rem;
-    background-color: gray;
+    background-color: rgb(108, 108, 108);
+    box-shadow: var(--shadow);
 }
 
 #btn-converter{
     font-size: 1.2rem;
-    font-weight: bolder;
+    height: 2.5rem;
     letter-spacing: 3px;
-    background-color: var(--light-green);
+    background-color:var(--light-green);
+    box-shadow: var(--shadow);
 }
 
 #btn-converter:hover{
@@ -81,8 +82,12 @@ select{
     transition: .1s ease-in;
 }
 
-input, select, button, #result-box{
-    border-radius: 10px;
+#result-box{
+    
+}
+
+#update-info{
+    font-size: 10px;
     text-align: center;
 }
 
