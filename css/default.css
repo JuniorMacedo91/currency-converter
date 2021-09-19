@@ -37,6 +37,10 @@ input, select, button, #result-box{
     text-align: center;
 }
 
+#container{
+    background-color: var(--dark-gray);
+}
+
 #home-container{
     position: absolute;
     width: 100%;
@@ -45,19 +49,18 @@ input, select, button, #result-box{
     background: url(../assets/bg-home.png) no-repeat center ;
     background-size: cover;
 
-    display: grid;
+    display: none;
     z-index: 2;
 }
 
 main{
     height: 100vh;
-
     display: grid;
-    grid-template-rows: 20% 45% auto;
+    grid-template-rows: 17% 45% auto;
     gap: 1rem;
 
     padding:1.5rem;
-    background-color: var(--dark-gray);
+    overflow:hidden;
 }
 
 #icon-wrapper{

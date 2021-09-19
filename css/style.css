@@ -20,16 +20,27 @@
     letter-spacing: 5px;
 }
 
-#title-wrapper{
-    display: grid;
-    justify-content: flex-end;
-    text-align: right;
-}
-
 #title-wrapper span{
     display: grid;
     font-weight: bolder;
     letter-spacing: 3px;
+}
+
+.line:nth-child(2){
+    width: 40%;
+    border-bottom: 2px solid var(--light-green);
+}
+
+.line:nth-child(3){
+    width: 80%;
+    border-bottom: 4px solid #fff;
+    padding: 3px;
+}
+
+.line:nth-child(4){
+    width: 60%;
+    border-bottom: 2px solid var(--main-color);
+    padding: 3px;
 }
 
 #amount-input{
@@ -92,4 +103,3 @@ select{
     font-size: 12px;
     text-align: center;
 }
-
