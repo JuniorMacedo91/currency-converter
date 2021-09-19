@@ -1,7 +1,15 @@
 @media screen and (min-width:768px) {
     #container{
-        background-color: #333c44;
         height: 300px;
+        background-color: #333c44;
+    }
+    #icon-wrapper{
+        display: grid;
+        place-content: center;
+    }
+
+    #icon-wrapper svg, #brand{
+        margin:auto;
     }
 
     main{
