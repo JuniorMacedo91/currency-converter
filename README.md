@@ -4,5 +4,5 @@ Aplicação para conversão de moedas utilizando API
 ## Desenvolvimento
   - [x] Criação do layout;
   - [ ] Criação da API;
-  - [ ] Responsividade;
+  - [x] Responsividade;
   
