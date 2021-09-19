@@ -94,6 +94,7 @@ select{
 }
 
 #result-box{
+    display: grid;
     padding: 10px;
     background-color: rgb(36, 44, 52);
     box-shadow: var(--shadow);

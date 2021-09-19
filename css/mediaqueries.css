@@ -1,4 +1,4 @@
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     #container{
         background-color: #333c44;
         height: 300px;
@@ -20,12 +20,12 @@
     }
 
     #amount-input, #btn-converter, select{
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 10px;
     }
 
     label{
-        margin: 1rem;
+        margin: 10px;
     }
 
     #btn-converter{
@@ -39,6 +39,5 @@
     }
 }
 
-@media screen and (min-width:px) {
-    
-}
+
+
