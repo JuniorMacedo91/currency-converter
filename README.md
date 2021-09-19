@@ -1,4 +1,4 @@
-# api-conversor-moeda
+# api-conversor-de-moeda
 Aplicação para conversão de moedas utilizando API
 
 ## Desenvolvimento
