@@ -47,7 +47,7 @@
     width: 100%;
     font-size: 2.5rem;
     padding: 5px;
-    color: black;
+    color: var(--dark-gray);
     background-color: rgb(214, 214, 214);
     box-shadow: var(--shadow);
 }

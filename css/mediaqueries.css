@@ -22,7 +22,6 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 2rem;
-        border-radius: 10px;
         background-color: var(--dark-gray);
         box-shadow: var(--shadow);
     }
@@ -46,6 +45,3 @@
         color: black;
     }
 }
-
-
-

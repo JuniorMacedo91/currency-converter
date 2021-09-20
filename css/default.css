@@ -19,27 +19,21 @@
     --shadow:rgb(11 11 11 / 70%) 0px 5px 15px;
 }
 
-body{
-    height: 100vh;
-}
+body{height: 100vh;}
 
 span{
     font-size: 3rem;
     color: var(--main-color);
 }
 
-p{
-    margin-bottom: 8px;
-}
+p{margin-bottom: 8px;}
 
-input, select, button, #result-box{
-    border-radius: 10px;
+input, select, button, #result-box, #converter-container{
+    border-radius: 5px;
     text-align: center;
 }
 
-#container{
-    background-color: var(--dark-gray);
-}
+#container{ background-color: var(--dark-gray); }
 
 #home-container{
     position: absolute;
@@ -67,6 +61,4 @@ main{
     backdrop-filter: blur(5px);
 }
 
-#converter-container{
-    display: grid; 
-}
+#converter-container{ display: grid; }
