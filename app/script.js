@@ -15,6 +15,5 @@ function getUpdateRate(time){
     updateInfo.innerHTML = `Ultima atualização: <br> ${date.toDateString()}`
 }
 
-
 converter(getUpdateRate) 
 converter()
