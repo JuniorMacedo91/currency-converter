@@ -2,26 +2,38 @@ const amountInput = document.querySelector('#amount-input')
 const currencyOne = document.querySelector('#currency-one')
 const currencyTwo = document.querySelector('#currency-two')
 const btnConverter =document.querySelector('#btn-converter')
-const updateInfo = document.querySelector('#update-info')
+const resultValue = document.querySelector('#result-value')
+const currencyName = document.querySelector('#currencyName')
+const currencyBase = document.querySelector('#currencyBase')
 
 
-const fetchApiExchange = async () => {
-    const url = await fetch(`https://v6.exchangerate-api.com/v6/c62a7e04cb7eace0dd080d6b/latest/USD`);
-    const response = await url.json();
-   
+const fetchApiExchange = async (rateOne,rateTwo) => {
+    const url = await fetch(`https://economia.awesomeapi.com.br/json/${rateOne}-${rateTwo}`);
+    const response = await url.json()
     return response
 }
 
 const showRates = async () =>{
-    const rateData = await fetchApiExchange();
+    const url = await fetch(`https://economia.awesomeapi.com.br/json/all`)
+    const rates = await url.json()
 
-    const rates = rateData.conversion_rates
-   
     for(var rate in rates){
-        currencyOne.innerHTML += `<option>${rate}</option>`
-        currencyTwo.innerHTML += `<option>${rate}</option>`
+        var getRates = selectedRate =>`<option ${rate === selectedRate ? 'selected':''}>${rate}</option>`
+        currencyOne.innerHTML += getRates('BRL')
+        currencyTwo.innerHTML +=  getRates('USD')
     }
 }
 
-fetchApiExchange() 
+function toConvert(fetchApiExchange){
+    var rateOne = currencyOne.value;
+    var rateTwo = currencyTwo.value;
+   
+    return fetchApiExchange('USD','BRL')
+}
+
+
+toConvert(fetchApiExchange)
 showRates()
+
+
+//BRL = 0,190215 USD
