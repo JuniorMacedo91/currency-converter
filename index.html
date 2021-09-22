@@ -43,12 +43,16 @@
     
                     <label for="currency-one">
                         <p>From</p>
-                        <select name="" id="currency-one"></select>
+                        <select name="" id="currency-one">
+                            <option selected>BRL</option>
+                        </select>
                     </label>
 
-                    <label for="currency-one">
+                    <label for="currency-two">
                         <p>To</p>
-                        <select name="" id="currency-two"></select>
+                        <select name="" id="currency-two">
+                            <option selected>BRL</option>
+                        </select>
                     </label>
                     
                 </div>
@@ -57,14 +61,11 @@
             </section>
     
             <section id="result-box">
-                <span id="result-value">138,00</span>
-                <p>1 BRL = 0,190215 USD</p>
-                <p>1 USD = 5,25721 BRL</p>
+                <span id="result-value"></span>
+                <p id="currencyName"></p>
+                <p id=  currencyBase></p>
             </section>
-    
-            <footer id="update-currency-wrapper">
-                <p id="update-info"></p>
-            </footer>
+
         </main>
     </div>
 </body>
