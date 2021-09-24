@@ -1,14 +1,17 @@
+#header-container{
+    background-color: #3b4753;
+    height: 300px;
+    padding: 2rem 0;
+}
+
 #icon-wrapper svg{
     width: 250px;
     filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.6));
-    margin-left: -3rem;
 }
 
 #brand{
     font:3.5rem 'Audiowide', sans-serif;
     letter-spacing: 5px;
-    margin-left: -9rem;
-    color: white;
 }
 
 #slogan{
@@ -20,10 +23,8 @@
     letter-spacing: 5px;
 }
 
-#title-wrapper span{
-    display: grid;
-    font-weight: bolder;
-    letter-spacing: 3px;
+.line{
+    padding: 5px;
 }
 
 .line:nth-child(2){
@@ -34,73 +35,67 @@
 .line:nth-child(3){
     width: 80%;
     border-bottom: 4px solid #fff;
-    padding: 3px;
 }
 
 .line:nth-child(4){
     width: 60%;
     border-bottom: 2px solid var(--main-color);
-    padding: 3px;
+}
+
+#title span{
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+#converter-container,input, select ,button, footer{
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+#converter-container{
+    background-color: var(--dark-gray);
+}
+
+input, select, button{
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    color: black;
 }
 
 #amount-input{
     width: 100%;
-    font-size: 2.5rem;
-    padding: 5px;
-    color: var(--dark-gray);
-    background-color: rgb(214, 214, 214);
-    box-shadow: var(--shadow);
 }
 
-#currency-option-box{
+#rate-selector-wrapper{
     display: flex;
-    place-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-select{
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-
-    width: 7rem;
-    padding: 5px;
-    font-size: 1.5rem;
-
-    background: url('../assets/arrow.svg ') no-repeat 90px 0px  ;
-    background-size: 1rem;
-    background-color: rgb(108, 108, 108);
-    box-shadow: var(--shadow);
+label{
+    margin-left: 5px;
 }
 
-#btn-converter{
-    font-size: 1.2rem;
-    height: 2.5rem;
-    letter-spacing: 3px;
-    background-color:var(--light-green);
-    box-shadow: var(--shadow);
-}
-
-#btn-converter:hover{
-    background-color: var(--main-color);
+#btn-convert{
+    margin-top: 1rem;
     color: white;
-    transition: .2s ease-in;
+    background-color: var(--light-green);
     cursor: pointer;
 }
 
-#btn-converter:active{
-    transform: scale(.98);
-    transition: .1s ease-in;
+#btn-convert:hover{
+    background-color: var(--main-color);
+    transition: ease-in .2s;
 }
 
-#result-box{
-    display: grid;
-    padding: 10px;
-    background-color: rgb(41, 49, 57);
-    box-shadow: var(--shadow);
+#btn-convert:active{
+    transform: scale(.95);
 }
 
-#update-info, #result-box p{
-    font-size: 12px;
-    text-align: center;
+#result-container{
+    background-color: #293139;
+}
+
+#result{
+    font-size: 3rem;
+    color: var(--main-color);
 }
