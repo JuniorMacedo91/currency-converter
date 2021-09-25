@@ -23,6 +23,10 @@ body{
     width: 100%;
 }
 
+p{
+    padding: 5px 0;
+}
+
 #home-container, #icon-wrapper, #header-wrapper, #title, #amount-box{
     display: grid;
 }
@@ -63,12 +67,8 @@ body{
 }
 
 #result-container{
-    display: grid;
+    display: none;
     place-items: center;
     padding: 2rem;
+    background-color: #293139;
 }
-
-p{
-    padding: 5px 0;
-}
-

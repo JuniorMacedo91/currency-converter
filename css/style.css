@@ -1,7 +1,7 @@
 #header-container{
     background-color: #3b4753;
     height: 300px;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 #icon-wrapper svg{
@@ -56,10 +56,11 @@
     background-color: var(--dark-gray);
 }
 
-input, select, button{
+input, select, button, option{
     font-size: 1.2rem;
     padding: 5px 15px;
     color: black;
+    text-align: center;
 }
 
 #amount-input{
@@ -89,10 +90,6 @@ label{
 
 #btn-convert:active{
     transform: scale(.95);
-}
-
-#result-container{
-    background-color: #293139;
 }
 
 #result{

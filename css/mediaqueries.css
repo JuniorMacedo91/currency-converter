@@ -1,6 +1,9 @@
 @media screen and (max-width:1023px) {
-    #header-wrapper, #converter-container, #result-container{
+    #converter-container{
         display: grid;
+    }
+    
+    #header-wrapper, #converter-container, #result-container{
         width: 85%;
     }
 
