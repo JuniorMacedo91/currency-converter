@@ -5,6 +5,7 @@ const btnConverter = document.querySelector('#btn-convert')
 const showResult = document.getElementById('result-container')
 const result = document.querySelector('#result')
 const baseRate = document.querySelector('#rate')
+const updateRate = document.querySelector('#updateRate')
 
 btnConverter.addEventListener('click', toConvert)
 
@@ -28,10 +29,9 @@ async function display (response){
 }
 
 async function toConvert(){
-   (amount.value === '')? alert('Informe um valor') :
+   (amount.value === '')? alert('Informe um valor') : showResult.style.display='grid'
  
-    showResult.style.display='grid'
-
+    let currentDate = new Date().toDateString()
     let selectedRateOne = currencyOne.value
     let selectedRateTwo = currencyTwo.value
 
@@ -44,6 +44,5 @@ async function toConvert(){
 
     result.innerHTML = total.toFixed(2).replace('.',',')
     baseRate.innerHTML = `1 ${selectedRateOne} = ${rate.toFixed(2)}`
+    updateRate.innerHTML = `Ultima atualização: ${currentDate}`
 }
-
-
