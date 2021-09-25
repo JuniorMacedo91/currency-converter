@@ -37,35 +37,30 @@
         <section id="converter-container">
             <div id="amount-box">
                 <label>Amount</label>
-                <input type="number" name="" id="amount-input">
+                <input type="number" name="" min="1" id="amount-input">
             </div>
 
             <div id="rate-selector-container">
                 <div id="rate-selector-wrapper">
                     <label>
                         <p>From</p>
-                        <select name="" id="currencyOne">
-                            <option value="">BRL</option>
-                        </select>
+                        <select name="" id="currencyOne" ></select>
                     </label>
 
                     <label>
                         <p>To</p>
-                        <select name="" id="currencyTwo">
-                            <option value="">USD</option>
-                        </select>
+                        <select name="" id="currencyTwo" ></select>
                     </label>
                 </div>
             </div>
-            <button id="btn-convert">Convert</button>
+            <button id="btn-convert" >Convert</button>
         </section>
 
         <footer id="result-container">
-            <p id="result">$32,50</p>
-            <p id="exchange-rate-name">Real/Dolar</p>
-            <p id="rate">1 Dolar = 5.29</p>
+            <p id="result"></p>
+            <p id="rate"></p>
         </footer>
     </main>
 </body>
-    <script src="/app/script.js"></script>
+<script src="/app/script.js"></script>
 </html>
