@@ -35,7 +35,7 @@ Já no layout, criei uma animação na interface com logo intuitivo, onde o "X" 
 ## Principais desafios em CSS:
 - Criar animação com SVG;
 - Trablhar com stroke-dasharray e stroke-dashoffset; 
-- Keyframes;
+- Keyframes.
   
 ## Tecnologias:
 
