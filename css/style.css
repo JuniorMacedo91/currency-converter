@@ -101,3 +101,7 @@ label{
     font-size: 3rem;
     color: var(--main-color);
 }
+
+#updateRate{
+    font-size: 10px;
+}
