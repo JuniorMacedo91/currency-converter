@@ -1,39 +1,49 @@
-const amountInput = document.querySelector('#amount-input')
-const currencyOne = document.querySelector('#currency-one')
-const currencyTwo = document.querySelector('#currency-two')
-const btnConverter =document.querySelector('#btn-converter')
-const resultValue = document.querySelector('#result-value')
-const currencyName = document.querySelector('#currencyName')
-const currencyBase = document.querySelector('#currencyBase')
+const amount = document.querySelector('#amount-input')
+const currencyOne = document.querySelector('#currencyOne')
+const currencyTwo = document.querySelector('#currencyTwo')
+const btnConverter = document.querySelector('#btn-convert')
+const showResult = document.getElementById('result-container')
+const result = document.querySelector('#result')
+const baseRate = document.querySelector('#rate')
 
+btnConverter.addEventListener('click', toConvert)
 
-const fetchApiExchange = async (rateOne,rateTwo) => {
-    const url = await fetch(`https://economia.awesomeapi.com.br/json/${rateOne}-${rateTwo}`);
+async function fetchExchangeRate (){
+    const url = await fetch(`https://api.frankfurter.app/currencies`)
     const response = await url.json()
-    return response
+    display(response)
 }
 
-const showRates = async () =>{
-    const url = await fetch(`https://economia.awesomeapi.com.br/json/all`)
-    const rates = await url.json()
+fetchExchangeRate()
 
-    for(var rate in rates){
-        var getRates = selectedRate =>`<option ${rate === selectedRate ? 'selected':''}>${rate}</option>`
-        currencyOne.innerHTML += getRates('BRL')
-        currencyTwo.innerHTML +=  getRates('USD')
+async function display (response){
+    const rates = response
+    
+    for(let rate in rates){
+        currencyOne.innerHTML += `<option>${rate}</option>`
+        currencyTwo.innerHTML += `<option>${rate}</option>`
     }
+    selectedRateOne = currencyOne.options[currencyOne.selectedIndex = 31].text
+    selectedRateTwo = currencyTwo.options[currencyTwo.selectedIndex = 2].text
 }
 
-function toConvert(fetchApiExchange){
-    var rateOne = currencyOne.value;
-    var rateTwo = currencyTwo.value;
-   
-    return fetchApiExchange('USD','BRL')
+async function toConvert(){
+   (amount.value === '')? alert('Informe um valor') :
+ 
+    showResult.style.display='grid'
+
+    let selectedRateOne = currencyOne.value
+    let selectedRateTwo = currencyTwo.value
+
+    const url = await fetch(`https://api.frankfurter.app/latest?&from=${selectedRateOne}&to=${selectedRateTwo}`)
+    const response = await url.json()
+    const rateInfo = Object.entries(response.rates)
+    
+    const rate = rateInfo[0][1]
+    let total = (rate * amount.value)
+
+    result.innerHTML = total.toFixed(2).replace('.',',')
+    baseRate.innerHTML = `1 ${selectedRateOne} = ${rate.toFixed(2)}`
 }
 
 
-toConvert(fetchApiExchange)
-showRates()
-
-
-//BRL = 0,190215 USD
