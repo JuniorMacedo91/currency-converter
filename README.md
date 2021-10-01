@@ -1,43 +1,45 @@
-# api-conversor-de-moeda
-Aplicação para conversão de moedas utilizando API.
+# <p align="center"> Currency Converter </p>
 
 <p align="center">
   <img src="cover.png" width="750px">
 </p>
 
-# Descrição:
-Essa aplicação foi desenvolvida para consolidar os conhecimentos e aprimorar as práticas em APIs com Fetch() e async function.
+> Application to convert currencies throught API
 
-Para utilização, primeiro deve escolher a moeda base em FROM e depois a moeda para conversão em TO.
-O resultado irá aparecer logo abaixo, informando o valor de conversão e o valor unitário da moeda base, referente a ultima atualização da API.
+# About:
+This application it was a great challenge to work with APIs and Async functions.
 
-Já no layout, criei uma animação na interface com logo intuitivo, onde o "X" faz uma junção com a palavra "change", formando EXCHANGE, que representa todo o significado da aplicação.
+API gives reference exchange rates in accordance with its updating.
+
+- First you have to choose the base currency in the " from " selector;
+- Then, choose the conversion currency in the " to " selector;
+- Bellow will be displayed the result.
 
 > API Utilizada: https://www.frankfurter.app/
 
-## Funcionalidades:
-- [x] Calculo de moedas;
-- [x] 33 tipos de moedas;
-- [x] Site responsivo;
+## Features:
+- [x] Calculate currency exchange rates;
+- [x] 33 types of currencies;
+- [x] Responsive layout;
 
-## Layout Responsivo:
+## Responsive layout:
 <p align="center">
   <img src="responsive.png" width="750px">
 </p>
 
-## Principais desafios em JavaScript:
+## Javascript Main Challenges:
 
-- Estruturar a API;
-- Utilização e compreensão de callbacks;
-- Entender o método Object.entries();
-- Como pegar um valor do select utilizando a propriedade selectedIndex;
+- Structuring API;
+- Improving callback functions;
+- Understand object.entries();
+- Get values from selectIndex() propriety;
 
-## Principais desafios em CSS:
-- Criar animação com SVG;
-- Trablhar com stroke-dasharray e stroke-dashoffset; 
+## CSS Main Challenges:
+- SVG Animations;
+- Build stroke - dasharray and stroke-dashoffeset; 
 - Keyframes.
   
-## Tecnologias:
+## Skills:
 
 [![HTML](https://img.shields.io/badge/HTML-red?style=for-the-badge&logo=HTML5&labelColor=black)](https://github.com/JuniorMacedo91)
 [![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=CSS3&labelColor=black)](https://github.com/JuniorMacedo91)
